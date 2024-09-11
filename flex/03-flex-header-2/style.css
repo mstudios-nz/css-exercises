@@ -12,9 +12,18 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
 }
 
-.profile-image {
+.left-header, .right-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+ }
+
+ .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
@@ -23,10 +32,12 @@ body {
 }
 
 .logo {
+  display: flex;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  align-items: center;
 }
 
 button {
@@ -45,4 +56,8 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
 }
